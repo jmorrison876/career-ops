@@ -1,0 +1,144 @@
+{
+  "lang": "en",
+  "country": "US",
+  "page_format": "letter",
+  "candidate": {
+    "name": "Jason Morrison",
+    "title": "Senior VoIP Engineer | SIP & Carrier Voice Platforms",
+    "location": "Downingtown, PA",
+    "phone": "484-432-6210",
+    "email": "jason.voipengineer@gmail.com",
+    "linkedin": {
+      "url": "https://linkedin.com/in/jason-morrison-2435aa44/",
+      "display": "linkedin.com/in/jason-morrison-2435aa44/"
+    }
+  },
+  "summary": "Senior VoIP Engineer and technical lead with 15+ years of experience designing and operating carrier-grade and enterprise voice platforms. Experienced in SIP/RTP troubleshooting, carrier interconnects, SBCs, and OpenSIPS configuration. Leads production upgrades and cross-functional engineering work across cloud, hybrid, and on-prem environments. Builds Python/Ansible automation and supports containerized voice workloads.",
+  "competencies": [
+    "SIP/RTP troubleshooting",
+    "Carrier interconnects",
+    "SBCs & softswitches",
+    "OpenSIPS configuration",
+    "Call quality analysis",
+    "Technical leadership",
+    "Python & Ansible",
+    "Cloud voice platforms"
+  ],
+  "experience": [
+    {
+      "company": "MetTel",
+      "location": "New Jersey",
+      "role": "Senior VOIP Engineer",
+      "dates": "Sep 2024 \u2013 Present",
+      "bullets": [
+        "Design, integrate, and troubleshoot SIP trunking, carrier interconnects, SBCs, BroadWorks, and Microsoft Teams voice services, including Direct Routing and Operator Connect.",
+        "Serve as a senior escalation point for complex SIP/RTP, call-routing, media, interoperability, and call-quality issues using Wireshark, packet captures, SBC/platform traces, and end-to-end call analysis.",
+        "Act as a senior technical lead for carrier-grade voice platform architecture, upgrades, technology evaluations, and operational improvements across highly available production environments.",
+        "Lead platform and OS upgrade initiatives, interoperability testing, implementation planning, and production validation while minimizing service impact.",
+        "Partner with network engineering, security, vendors, carriers, and internal stakeholders to improve platform resiliency, security, monitoring, standards, and operational readiness."
+      ]
+    },
+    {
+      "company": "Evolve IP",
+      "location": "Pennsylvania",
+      "role": "Senior VOIP Engineer",
+      "dates": "Jan 2015 \u2013 Aug 2024",
+      "bullets": [
+        "Designed and scaled VoIP services across distributed, cloud-based environments.",
+        "Served as escalation point (Tier 4) for complex call quality and interoperability issues.",
+        "Performed deep-dive troubleshooting using Wireshark, SIP traces, and RTP analysis to resolve critical issues.",
+        "Developed automation tools (Python/Ansible) to streamline provisioning and reduce operational overhead.",
+        "Helped drive the shift toward containerized voice workloads using Docker and Kubernetes.",
+        "Led integrations with Microsoft Teams Direct Routing and Webex, expanding platform capabilities for enterprise customers.",
+        "Built and supported WebRTC-based communication workflows, bridging browser/mobile clients with SIP infrastructure.",
+        "Worked closely with product and engineering teams to translate technical capabilities into customer-facing solutions."
+      ]
+    },
+    {
+      "company": "Flow",
+      "location": "Jamaica",
+      "role": "Switch Engineer",
+      "dates": "Aug 2010 \u2013 Feb 2014",
+      "bullets": [
+        "Managed Class 5 softswitch infrastructure and multi-protocol interconnects (SIP, SS7, PRI, CAS).",
+        "Designed and deployed voice services using SBCs and Metaswitch platforms.",
+        "Integrated domestic and international carrier connections.",
+        "Supported product launches and trained internal teams on new voice services.",
+        "Provided high-level support for enterprise and carrier customers."
+      ]
+    },
+    {
+      "company": "IslandNet",
+      "location": "Jamaica",
+      "role": "VOIP Network Engineer",
+      "dates": "Jan 2008 \u2013 Aug 2010",
+      "bullets": [
+        "Built and supported VoIP services using Asterisk and carrier softswitches.",
+        "Established SIP/H.323 interconnections with global carriers.",
+        "Managed underlying network infrastructure supporting voice delivery.",
+        "Optimized routing and cost strategies through LCR and carrier negotiation."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "Bachelor of Science in Electrical, Electronics and Communications Engineering",
+      "org": "University of Technology Jamaica",
+      "year": "Sept 2002 \u2013 Jun 2007"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "CCNA (Routing and Switching)",
+      "org": "",
+      "year": ""
+    },
+    {
+      "title": "SSCA (SIP School)",
+      "org": "",
+      "year": ""
+    },
+    {
+      "title": "Polycom Hosted Voice Services (Level 2)",
+      "org": "",
+      "year": ""
+    },
+    {
+      "title": "Audio Codes SIP CEP",
+      "org": "",
+      "year": ""
+    },
+    {
+      "title": "CUCM and CUCCX",
+      "org": "",
+      "year": ""
+    },
+    {
+      "title": "Certified Kubernetes Administrator (CKA)",
+      "org": "",
+      "year": ""
+    }
+  ],
+  "skills": [
+    {
+      "category": "Voice & real-time communications",
+      "items": "SIP, RTP, RTCP, SRTP, WebRTC, SIP trunking, call routing, media handling, IVR, MOS, jitter, latency, packet loss"
+    },
+    {
+      "category": "VoIP platforms & infrastructure",
+      "items": "OpenSIPS configuration, BroadWorks, FreeSWITCH, Asterisk, CUCM, Metaswitch, Oracle/Acme Packet, AudioCodes, Sansay SBCs"
+    },
+    {
+      "category": "Cloud, DevOps & automation",
+      "items": "Kubernetes, Docker, microservices, Python, Ansible, CI/CD concepts, cloud-native architectures"
+    },
+    {
+      "category": "Networking & operating environments",
+      "items": "TCP/IP, DNS, NAT, firewalls, QoS, STIR/SHAKEN, encrypted signaling and media, SIP/SS7/PRI/CAS carrier interconnects, Linux/Unix, private/public/hybrid cloud"
+    },
+    {
+      "category": "Monitoring & troubleshooting",
+      "items": "Wireshark, PCAP analysis, SIP traces, RTP analysis, CDRs, Grafana, Elasticsearch/Kibana, Splunk"
+    }
+  ]
+}

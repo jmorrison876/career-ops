@@ -33,7 +33,7 @@ reports/**/*.md
 !reports/.gitkeep
 /output
 !/output/
-output/*
+# output/*
 !output/.gitkeep
 # batch/ holds generated worker output. Ignore the directory and allowlist the
 # tracked scaffolding, so a filename a future generator picks is covered by
