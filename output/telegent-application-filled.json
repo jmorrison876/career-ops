@@ -1,0 +1,431 @@
+{
+  "date": "2026-10-25",
+  "state": "filled",
+  "answers": {
+    "cName": "Jason Morrison",
+    "cEmail": "jason.voipengineer@gmail.com",
+    "cAddress": "Downingtown, PA",
+    "cSalary": "175,000–220,000+ base, depending on scope and overall package",
+    "cSummary": "Senior VoIP Engineer and technical lead with 15+ years of experience designing and operating carrier-grade and enterprise voice platforms. Experienced in SIP/RTP troubleshooting, carrier interconnects, SBCs, and OpenSIPS configuration. Leads production upgrades and cross-functional engineering work across cloud, hybrid, and on-prem environments. Builds Python/Ansible automation and supports containerized voice workloads.",
+    "cCoverLetter": "Dear Telegent hiring team,\n\nI'm applying for the Staff SIP Engineer role. My background includes carrier-grade voice platforms, SIP/RTP troubleshooting, SBCs, and domestic and international carrier interconnections. At MetTel, I lead voice platform initiatives and handle complex call-routing, media, and interoperability escalations. My earlier work includes cloud voice services, Python/Ansible automation, and Docker/Kubernetes workloads.\n\nI have hands-on OpenSIPS configuration experience. Scripting in OpenSIPS is an area I'd need to develop, and I'm a quick learner. I'd welcome a conversation about how that fits your immediate needs and the carrier-voice experience I can contribute.\n\nI'm based in Downingtown, Pennsylvania, and interested in the remote role. Thank you for considering my application.\n\nJason Morrison\njason.voipengineer@gmail.com\n484-432-6210"
+  },
+  "currency": "USD",
+  "period": "yearly",
+  "phone": "left blank; SMS consent not assumed",
+  "smsConsent": false,
+  "resume": "output/cv-jason-morrison-002-telegent-2026-10-25.pdf",
+  "before": {
+    "url": "https://telegent-inc.breezy.hr/p/669461e2c48e-staff-sip-engineer/apply",
+    "title": "Staff SIP Engineer",
+    "text": "Staff SIP Engineer\nPleasant Grove, UTFull-TimeEngineering / Dev\nJob OpeningsStaff SIP EngineerApply\n Attached\n Use My Indeed Resume\nApply Using LinkedIn\n cv-jason-morrison-002-telegent-2026-10-25.pdf\nPersonal Details\nFull Name*\nEmail Address*\nPhone Number\nBy providing your phone number you agree to receive informational text messages from Telegent, Inc.. Telegent, Inc. will send updates about your application via SMS. Message & data rates may apply, reply STOP to opt out at any time.\nAddress\n\nDesired Salary\n[currency options omitted]\nHourly\nWeekly\nMonthly\nYearly\nExperience\nWork History\nStart date\nEnd date\nDelete\nStart date\nEnd date\nDelete\nStart date\nEnd date\nDelete\nStart date\nEnd date\nDelete\n Add Position\nEducation\nStart date\nEnd date\nDelete\n Add Education\nExperience Summary\nCover Letter\nSubmit Application\n\nPowered bybreezy",
+    "controls": [
+      {
+        "tag": "INPUT",
+        "type": "file",
+        "name": "cResume",
+        "id": "main-attachment",
+        "required": true,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": [
+          "cv-jason-morrison-002-telegent-2026-10-25.pdf"
+        ],
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "cName",
+        "id": "",
+        "required": true,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "Jason Morrison",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "email",
+        "name": "cEmail",
+        "id": "",
+        "required": true,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "jason.voipengineer@gmail.com",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "cPhoneNumber",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "checkbox",
+        "name": "smsConsent",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "on",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "cAddress",
+        "id": "fullAddress",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "Downingtown, PA",
+        "checked": false
+      },
+      {
+        "tag": "SELECT",
+        "type": "select-one",
+        "name": "salaryCurrency",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "value": "USD"
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "cSalary",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "175000220000",
+        "checked": false
+      },
+      {
+        "tag": "SELECT",
+        "type": "select-one",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "value": "yearly"
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "MetTel",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "Senior VOIP Engineer",
+        "checked": false
+      },
+      {
+        "tag": "TEXTAREA",
+        "type": "textarea",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "New Jersey Design, integrate, and troubleshoot SIP trunking, carrier interconnects, SBCs, BroadW orks, and Microsoft Teams voice services, including Direct Routing and Operator Connect. Serve as a senior escalation point for complex SIP/R TP, call-routing, media, interoperability, and call-quality issues using Wireshark, packet captures, SBC/platform traces, and end-to-end call analysis. Act as a senior technical lead for carrier-grade voice platform architecture, upgrades, technology evaluations, and operational improvements across highly available production environments. Lead platform and OS upgrade initiatives, interoperability testing, implementation planning, and production validation while minimizing service impact. Partner with network engineering, security, vendors, carriers, and internal stakeholders to improve platform resiliency, security, monitoring, standards, and operational readiness."
+      },
+      {
+        "tag": "INPUT",
+        "type": "date",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "2024-09-01",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "date",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "2026-10-01",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "Evolve IP",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "Senior VOIP Engineer",
+        "checked": false
+      },
+      {
+        "tag": "TEXTAREA",
+        "type": "textarea",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "Pennsylvania Designed and scaled V oIP services across distributed, cloud-based environments. Served as escalation point (T ier 4) for complex call quality and interoperability issues. Performed deep-dive troubleshooting using Wireshark, SIP traces, and RTP analysis to resolve critical issues. Developed automation tools (Python/Ansible) to streamline provisioning and reduce operational overhead. Helped drive the shift toward containerized voice workloads using Docker and Kubernetes. Led integrations with Microsoft Teams Direct Routing and Webex, expanding platform capabilities for enterprise customers. Built and supported WebRTC-based communication workflows, bridging browser/mobile clients with SIP infrastructure. Worked closely with product and engineering teams to translate technical capabilities into customer-facing solutions."
+      },
+      {
+        "tag": "INPUT",
+        "type": "date",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "2015-01-01",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "date",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "2024-08-01",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "Flow",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "Switch Engineer",
+        "checked": false
+      },
+      {
+        "tag": "TEXTAREA",
+        "type": "textarea",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "Jamaica Managed Class 5 softswitch infrastructure and multi-protocol interconnects (SIP, SS7, PRI, CAS). Designed and deployed voice services using SBCs and Metaswitch platforms. Integrated domestic and international carrier connections. Supported product launches and trained internal teams on new voice services. Provided high-level support for enterprise and carrier customers."
+      },
+      {
+        "tag": "INPUT",
+        "type": "date",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "2010-08-01",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "date",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "2014-02-01",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "IslandNet",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "VOIP Network Engineer",
+        "checked": false
+      },
+      {
+        "tag": "TEXTAREA",
+        "type": "textarea",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "Jamaica Built and supported VoIP services using Asterisk and carrier softswitches. Established SIP/H.323 interconnections with global carriers. Managed underlying network infrastructure supporting voice delivery Optimized routing and cost strategies through LCR and carrier negotiation."
+      },
+      {
+        "tag": "INPUT",
+        "type": "date",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "2008-01-01",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "date",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "2010-08-01",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "Electronics and Communications Engineering University of TechnologySept",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "",
+        "checked": false
+      },
+      {
+        "tag": "TEXTAREA",
+        "type": "textarea",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": ""
+      },
+      {
+        "tag": "INPUT",
+        "type": "date",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "",
+        "checked": false
+      },
+      {
+        "tag": "INPUT",
+        "type": "date",
+        "name": "",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "",
+        "checked": false
+      },
+      {
+        "tag": "TEXTAREA",
+        "type": "textarea",
+        "name": "cSummary",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "Senior VoIP Engineer and technical lead with 15+ years of experience designing and operating carrier-grade and enterprise voice platforms. Experienced in SIP/RTP troubleshooting, carrier interconnects, SBCs, and OpenSIPS configuration. Leads production upgrades and cross-functional engineering work across cloud, hybrid, and on-prem environments. Builds Python/Ansible automation and supports containerized voice workloads."
+      },
+      {
+        "tag": "TEXTAREA",
+        "type": "textarea",
+        "name": "cCoverLetter",
+        "id": "",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "Dear Telegent hiring team,\n\nI'm applying for the Staff SIP Engineer role. My background includes carrier-grade voice platforms, SIP/RTP troubleshooting, SBCs, and domestic and international carrier interconnections. At MetTel, I lead voice platform initiatives and handle complex call-routing, media, and interoperability escalations. My earlier work includes cloud voice services, Python/Ansible automation, and Docker/Kubernetes workloads.\n\nI have hands-on OpenSIPS configuration experience. Scripting in OpenSIPS is an area I'd need to develop, and I'm a quick learner. I'd welcome a conversation about how that fits your immediate needs and the carrier-voice experience I can contribute.\n\nI'm based in Downingtown, Pennsylvania, and interested in the remote role. Thank you for considering my application.\n\nJason Morrison\njason.voipengineer@gmail.com\n484-432-6210"
+      },
+      {
+        "tag": "INPUT",
+        "type": "text",
+        "name": "hp_7f2b",
+        "id": "hp_7f2b",
+        "required": false,
+        "ariaRequired": null,
+        "maxLength": -1,
+        "value": "",
+        "checked": false
+      },
+      {
+        "tag": "BUTTON",
+        "type": "submit",
+        "name": "",
+        "id": "",
+        "ariaRequired": null,
+        "value": "",
+        "text": "Submit Application"
+      }
+    ]
+  }
+}
