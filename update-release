@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+set -e
+
+# Ensure we're on main
+if [ "$(git branch --show-current)" != "main" ]; then
+    echo "Error: Switch to main first."
+    exit 1
+fi
+
+# Check for uncommitted or untracked changes
+if [ -n "$(git status --porcelain)" ]; then
+    echo "Uncommitted changes detected. Commit or stash first."
+    exit 1
+fi
+
+# Fetch release tags
+git fetch upstream
+
+# Identify latest release
+latest=$(git tag -l "career-ops-v*" --sort=-version:refname | head -1)
+
+if [ -z "$latest" ]; then
+    echo "No release tags found."
+    exit 1
+fi
+
+echo "Latest release: $latest"
+echo ""
+echo "Incoming changes:"
+git diff --stat HEAD "$latest"
+
+# Merge release
+git merge "$latest"
+
+echo ""
+echo "Changes pending push:"
+git diff --stat origin/main..HEAD
+
+echo ""
+git status
