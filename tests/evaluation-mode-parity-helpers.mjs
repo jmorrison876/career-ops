@@ -7,11 +7,9 @@ import { isNestedCheckout } from '../lib/mjs-files.mjs';
 // Shared inventory for the harness and regression suite. Remove a re-synced
 // locale from FROZEN_EVALUATION_MODES here; keep it in KNOWN_EVALUATION_MODES.
 export const FROZEN_EVALUATION_MODES = new Set([
-  // modes/<lang>/oferta.md (#3669)
-  'da/oferta.md', 'pl/oferta.md',
-  // market-named evaluation modes (#3828)
-  'de/angebot.md', 'fr/offre.md', 'hi/naukri.md', 'id/lowongan.md', 'it/annuncio.md',
-  'ko/gonggo.md', 'nl/vacature.md', 'tr/is-ilani.md',
+  // Empty: da, de, fr, hi, id, it, ko, nl and pl were re-synced as market
+  // layers over modes/oferta.md (#5843), pt and ua as full translations
+  // (#5433), and tr/is-ilani.md gained the English header labels (#3828).
 ]);
 
 // A known file that stops being discovered (renamed, or its A) block dropped)
@@ -120,14 +118,20 @@ function heading(line) {
     || (match[1].startsWith(name) && /^[ \t]/.test(match[1].slice(name.length)))) ?? null;
 }
 
+const isReportTemplate = lines => lines.some(line => heading(line) === 'A)');
+
+function reportTemplates(text) {
+  return fenceParts(withoutComments(text)).blocks
+    .map(body => fenceParts(body).visible)
+    .filter(isReportTemplate);
+}
+
 /** Missing or malformed parts of the single fenced report-format template.
  * @param {string} text Mode documentation, whose template H1 may be localized.
  * @returns {string[]} Empty only when the template satisfies the shared contract.
  */
 export function structuralGaps(text) {
-  const templates = fenceParts(withoutComments(text)).blocks
-    .map(body => fenceParts(body).visible)
-    .filter(lines => lines.some(line => heading(line) === 'A)'));
+  const templates = reportTemplates(text);
   if (templates.length !== 1) return [`expected one fenced report template, found ${templates.length}`];
   const lines = templates[0];
   const headings = lines.map(heading).filter(Boolean);
@@ -140,7 +144,12 @@ export function structuralGaps(text) {
   if (gaps.length === 0 && headings.join('|') !== REQUIRED_HEADINGS.join('|')) {
     gaps.push('report section order A)–G) → Risk Summary → H)');
   }
-  // Machine Summary can precede A), so stop at the first H2, not just at A).
+  // Scripts find the Machine Summary by its heading, so it goes last (#6156)
+  // instead of standing between the reader and A). Not every locale has one.
+  const sections = lines.filter(line => /^ {0,3}##[ \t]+/.test(line));
+  const machine = sections.findIndex(line => /^ {0,3}##[ \t]+Machine Summary[ \t]*$/.test(line));
+  if (machine >= 0 && machine !== sections.length - 1) gaps.push('## Machine Summary is not the last report section');
+  // The header ends at the first H2, whatever it is, not just at A).
   const firstSection = lines.findIndex(line => /^ {0,3}##[ \t]+/.test(line));
   const header = lines.slice(0, firstSection);
   for (const label of REQUIRED_LABELS) {
@@ -148,5 +157,28 @@ export function structuralGaps(text) {
       gaps.push(`**${label}:** in report header`);
     }
   }
+  return gaps;
+}
+
+/** Missing parts of the ATS keyword-coverage contract (modes/oferta.md step 1b).
+ * The heading stays English in every locale, and the step is the JSON-file
+ * command that starts keyword-match.mjs with the report path as its own
+ * argument (#5853); tests/mode-command-arguments.test.mjs pins its exact text.
+ * It must be a fenced block outside the report template, which is report
+ * output rather than an instruction.
+ * @param {string} text Mode documentation.
+ * @returns {string[]} Empty when the template and the step are both present.
+ */
+export function keywordCoverageGaps(text) {
+  const templates = reportTemplates(text);
+  if (templates.length !== 1) return [`expected one fenced report template, found ${templates.length}`];
+  const gaps = [];
+  const count = templates[0].filter(line => /^ {0,3}##[ \t]+Keyword Coverage[ \t]*$/.test(line)).length;
+  if (count === 0) gaps.push('## Keyword Coverage');
+  else if (count > 1) gaps.push('duplicate ## Keyword Coverage');
+  // Only a fenced command counts: the same text quoted in prose is not something to run.
+  const { blocks } = fenceParts(withoutComments(text));
+  const commands = blocks.filter(body => !isReportTemplate(fenceParts(body).visible));
+  if (!commands.some(body => body.includes('"keyword-match.mjs", p.report'))) gaps.push('keyword-match.mjs step');
   return gaps;
 }
